@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Game Hub</title>
+</head>
+
+<body>
+<h1>My HTML Game Hub</h1>
+
+<button onclick="playGame('games/game1/index.html')">
+Play Game 1
+</button>
+
+<br><br>
+
+<iframe id="gameFrame"
+width="800"
+height="600"
+frameborder="0">
+</iframe>
+
+<script>
+function playGame(game) {
+document.getElementById("gameFrame").src = game;
+}
+</script>
+</body>
+</html>
