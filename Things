@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Game</title>
+</head>
+
+<body>
+<h1>My First Game</h1>
+
+<p>Click the button!</p>
+
+<button onclick="scoreUp()">Click Me</button>
+
+<h2>Score: <span id="score">0</span></h2>
+
+<script>
+let score = 0;
+
+function scoreUp() {
+score++;
+document.getElementById("score").textContent = score;
+}
+</script>
+</body>
+</html>
